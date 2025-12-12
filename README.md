@@ -82,6 +82,22 @@ Simply run the main application:
 python main.py
 ```
 
+For detailed usage instructions and examples, see [USAGE.md](USAGE.md).
+
+### Programmatic Usage
+
+You can also use the assistant in your own Python scripts:
+
+```python
+from main import MultiModelAssistant
+
+assistant = MultiModelAssistant()
+response = assistant.chat("openai", "What is Python?")
+print(response)
+```
+
+See [example.py](example.py) for more usage examples.
+
 ### Interactive Mode
 
 1. The assistant will display all available models based on your configured API keys
@@ -128,9 +144,11 @@ Multi-Model-Ai-Assistant/
 ├── gemini_model.py        # Google Gemini integration
 ├── cohere_model.py        # Cohere integration
 ├── huggingface_model.py   # Hugging Face integration
+├── example.py             # Example usage script
 ├── requirements.txt       # Python dependencies
 ├── .env.example          # Example environment variables
 ├── .gitignore            # Git ignore file
+├── USAGE.md              # Detailed usage guide
 └── README.md             # This file
 ```
 

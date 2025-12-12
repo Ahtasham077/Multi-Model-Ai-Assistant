@@ -1,4 +1,4 @@
-🚀 AI Multi-Model Assistant App
+🚀** AI Multi-Model Assistant App**
 
 An intelligent, Flutter-based AI assistant that uses multiple AI models (GPT, Claude, Gemini, Llama) and automatically selects the best and most cost-efficient model for every task.
 

@@ -33,6 +33,9 @@ class GeminiModel(AIModel):
             
         Returns:
             str: Generated response
+        
+        Note:
+            The max_tokens parameter is mapped to max_output_tokens for Gemini API compatibility.
         """
         if not self.is_available():
             return "Error: Google API key not configured"

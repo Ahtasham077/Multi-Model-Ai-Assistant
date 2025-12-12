@@ -32,6 +32,9 @@ class HuggingFaceModel(AIModel):
             
         Returns:
             str: Generated response
+        
+        Note:
+            The max_tokens parameter is mapped to max_new_tokens for Hugging Face API compatibility.
         """
         if not self.is_available():
             return "Error: Hugging Face API key not configured"

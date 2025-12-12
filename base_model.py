@@ -8,6 +8,9 @@ from typing import Dict, Any
 class AIModel(ABC):
     """Abstract base class for AI model integrations"""
     
+    # Placeholder value for unconfigured API keys
+    PLACEHOLDER_API_KEY = "your_api_key_here"
+    
     def __init__(self, api_key: str):
         """
         Initialize the AI model with API key
@@ -48,4 +51,4 @@ class AIModel(ABC):
         Returns:
             bool: True if model is available
         """
-        return bool(self.api_key and self.api_key != "your_api_key_here")
+        return bool(self.api_key and self.api_key != self.PLACEHOLDER_API_KEY)

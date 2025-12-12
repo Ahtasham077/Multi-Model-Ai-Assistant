@@ -32,6 +32,10 @@ class OpenAIModel(AIModel):
             
         Returns:
             str: Generated response
+        
+        Note:
+            max_tokens parameter works with both older and newer OpenAI models.
+            For chat completions, it limits the total tokens in the response.
         """
         if not self.is_available():
             return "Error: OpenAI API key not configured"
